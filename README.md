@@ -1,4 +1,4 @@
-Template Project - TODO
+Template Project - Getting Started
 
 Add Readme
 Update Fav Icon and logo(s).png

@@ -6,6 +6,7 @@ React template with built in functionality to get started including:
 - API Helper class to dispatch loading error and success actions
 - ESLint setup with typescript
 - Pre commit linting
+- Pre push test run 
 - Responsive drawer
 - Dark mode and MUI Theming
 

@@ -1,14 +1,13 @@
-import AccountBalance from "@mui/icons-material/AccountBalance";
 import AccountCircle from "@mui/icons-material/AccountCircle";
-import Settings from "@mui/icons-material/Settings";
 import React, { ReactElement } from "react";
+import { RouteUrls } from "./RouteUrls";
 
 export type NavigationItemType = {
   icon: ReactElement
-  text: string
+  text: string,
+  url: string
 }
+
 export const NavigationItems: Array<NavigationItemType> = [
-  {icon: <AccountCircle />, text: "firstPage"},
-  {icon: <Settings />, text: "secondPage"},
-  {icon: <AccountBalance />, text: "thirdPage"}
+  {icon: <AccountCircle />, text: "Home", url: RouteUrls.home}
 ];

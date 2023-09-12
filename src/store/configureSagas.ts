@@ -1,7 +1,6 @@
-import { all } from "redux-saga/effects";
+import { ForkEffect, all } from "redux-saga/effects";
 
-const sagas: Array<string> = [
-  // spawn(middleware),
+const sagas: Array<ForkEffect> = [
 ];
 
 export default function* rootSaga() {

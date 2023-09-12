@@ -2,8 +2,8 @@ import MenuIcon from "@mui/icons-material/Menu";
 import MuiAppBar from "@mui/material/AppBar";
 import IconButton from "@mui/material/IconButton";
 import Toolbar from "@mui/material/Toolbar";
-import Typography from "@mui/material/Typography";
 import React from "react";
+import DarkModeToggle from "./darkModeToggle/DarkModeToggleContainer";
 
 type AppBarProps = {
   handleDrawerToggle: () => void;
@@ -11,6 +11,7 @@ type AppBarProps = {
 
 const AppBar = ({ handleDrawerToggle }: AppBarProps) => (
   <MuiAppBar
+    component="nav"
     position="relative"
     sx={{ zIndex: theme => theme.zIndex.drawer + 1 }}>
     <Toolbar>
@@ -18,12 +19,13 @@ const AppBar = ({ handleDrawerToggle }: AppBarProps) => (
         component="label"
         aria-label="open drawer"
         onClick={handleDrawerToggle}
-        edge="start">
+        edge="start"
+        sx={{
+          display: { sm: "none" },
+        }}>
         <MenuIcon />
       </IconButton>
-      <Typography variant="h6" noWrap component="div">
-        Title
-      </Typography>
+      <DarkModeToggle />
     </Toolbar>
   </MuiAppBar>
 );
